@@ -13,6 +13,7 @@ greet(); // Ah, the sweet serenade of a greeting!
 ```
 
 ### Output
+
 ```yaml
 Sweet melodies of 'Hello,' dear reader!
 ```
@@ -30,6 +31,7 @@ sayHello("Hermione Granger"); // A tender greeting: Hello, Hermione Granger!
 ```
 
 ### Output
+
 ```yaml
 Love whispers: Hello, Hermione Granger!
 ```
@@ -51,6 +53,7 @@ greet(); // A secret greeting shared with the stars: Mysterious greetings!
 ```
 
 ### Output
+
 ```yaml
 Whispers of affection: Mysterious greetings!
 ```
@@ -81,6 +84,7 @@ console.log(addNew(3, 4)); // A waltz in the present: 7
 ```
 
 ### Output
+
 ```yaml
 7
 7
@@ -104,6 +108,7 @@ In the blink of an eye, the Immediately Invoked Function Expression (IIFE) decla
 ```
 
 ### Output
+
 ```yaml
 Whispers of love: A love at first sight, I am an IIFE!
 ```
@@ -126,6 +131,7 @@ console.log(`The crescendo of love: ${result}`);
 ```
 
 ### Output
+
 ```yaml
 The crescendo of love: 10
 ```
@@ -148,6 +154,7 @@ greetPerson("Hermione Granger", "Hi"); // A playful exchange: Hi, Hermione Grang
 ```
 
 ### Output
+
 ```yaml
 Sweet words exchanged: Hello, Harry Potter!
 Sweet words exchanged: Hi, Hermione Granger!
@@ -170,6 +177,7 @@ console.log(`A symphony of infinite love: ${sum(1, 2, 3, 4, 5)}`);
 ```
 
 ### Output
+
 ```yaml
 A symphony of infinite love: 15
 ```
@@ -198,10 +206,10 @@ In the world of JavaScript functions, each type has its own unique charm. May yo
 
 ---
 
-*Thank you for taking the time to read my article. Your engagement is the driving force behind the words on these pages. Whether you found information, inspiration, or simply enjoyed the content, your presence is deeply appreciated. Writing is a shared journey, and I'm grateful to have you as a reader. Cheers to the joy of exploration and discovery! 🌟*
+_Thank you for taking the time to read my article. Your engagement is the driving force behind the words on these pages. Whether you found information, inspiration, or simply enjoyed the content, your presence is deeply appreciated. Writing is a shared journey, and I'm grateful to have you as a reader. Cheers to the joy of exploration and discovery! 🌟_
 
-*If you enjoyed the article, consider giving it more stars!*
+_If you enjoyed the article, consider giving it more stars!_
 
-*With gratitude,*
+_With gratitude,_
 
-*Pugazharasan C*
+_*Afzal Imdad*_

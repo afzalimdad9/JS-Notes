@@ -1,6 +1,3 @@
-
-
-
 # 1. JavaScript: The Architect of Web Development 🏗️
 
 ## 1.1. Introduction
@@ -14,6 +11,7 @@ JavaScript serves as the architect in the realm of web development, forming the 
 Declaring a variable involves using the syntax `<keyword> <variable_name> = <value>;`.
 
 For example:
+
 ```javascript
 var num = 10;
 ```
@@ -23,6 +21,7 @@ var num = 10;
 Variables can be declared globally, locally within a function, or at the block level. The scope defines the region where the variable is accessible.
 
 Example:
+
 ```javascript
 var num = 10; // global variable
 
@@ -44,12 +43,14 @@ if (num == 10) {
 Naming conventions contribute to code readability. Here are some commonly used conventions:
 
 - **Camel Case:**
+
   ```javascript
-  var firstName = "Pugazharasan";
-  var lastName = "Chandrasekar";
+  var firstName = "Afzal";
+  var lastName = "Imdad";
   ```
 
 - **Pascal Case:**
+
   ```javascript
   class Person {
     constructor(firstName, lastName) {
@@ -60,9 +61,10 @@ Naming conventions contribute to code readability. Here are some commonly used c
   ```
 
 - **Snake Case:**
+
   ```javascript
-  var first_name = "Pugazharasan";
-  var last_name = "Chandrasekar";
+  var first_name = "Afzal";
+  var last_name = "Imdad";
   ```
 
 - **Constant Case:**
@@ -85,9 +87,11 @@ undefined, true, false, NaN, Infinity
 ### Var, Let, and Const: Managing Declarations 🗂️
 
 - **var:**
+
   - Declares a variable globally or locally to an entire function, potentially undergoing hoisting.
 
 - **let:**
+
   - Introduces block scope, restricting visibility to the block, statement, or expression. Does not undergo hoisting.
 
 - **const:**
@@ -158,7 +162,7 @@ The **Number** data type is akin to the measurements in a construction plan. It'
 var num = 10;
 var num1 = -10.5;
 var num2 = 10.5e5; // 1050000
-var num3 = 10.5E-5; // 0.000105
+var num3 = 10.5e-5; // 0.000105
 console.log(typeof num); // number
 ```
 
@@ -169,7 +173,7 @@ Here, `num` represents a dimension in our construction, allowing us to quantify 
 Strings are the textual threads that bind the elements of a construction project. Just as in construction, where we label and mark components, in programming, we use the **String** data type to store text.
 
 ```javascript
-var str = 'Hello World';
+var str = "Hello World";
 console.log(typeof str); // string
 ```
 
@@ -181,12 +185,12 @@ An **Object** in JavaScript is comparable to an architectural blueprint. It's a 
 
 ```javascript
 var obj = {
-  name: 'Pugazharasan C',
+  name: "Afzal Imdad",
   age: 25,
-  city: 'Trichy'
+  city: "Trichy",
 };
 console.log(typeof obj); // object
-console.log(obj.name); // Pugazharasan C
+console.log(obj.name); // Afzal Imdad
 console.log(obj["age"]); // 25
 ```
 
@@ -246,7 +250,7 @@ Here, `name` is undefined, representing an area in our construction project yet 
 Symbols are like unique building IDs. They create an immutable and unique identifier for our construction elements.
 
 ```javascript
-const symbol = Symbol('symbol');
+const symbol = Symbol("symbol");
 console.log(typeof symbol); // symbol
 console.log(symbol); // Symbol(symbol)
 ```
@@ -258,7 +262,10 @@ This unique symbol acts as an ID, ensuring distinct identification within our co
 **BigInt** represents precision engineering in our construction project. It deals with integers of arbitrary precision, offering accuracy in our calculations.
 
 ```javascript
-const bigInt = BigInt(100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000);
+const bigInt =
+  BigInt(
+    100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  );
 console.log(typeof bigInt); // bigint
 ```
 
@@ -269,6 +276,7 @@ Just as precision engineering ensures accurate measurements, BigInt ensures prec
 When embarking on a coding project, think of it as constructing a building. Here's the architectural blueprint:
 
 1. **Check User Input:**
+
    - Print user input to the console.
    - Understand the input provided by the user for a clear construction plan.
 
@@ -276,7 +284,7 @@ When embarking on a coding project, think of it as constructing a building. Here
    - Transform input into a consistent format, aligning with the requirements of your program.
    - Ensure the input aligns with the
 
- construction specifications.
+construction specifications.
 
 3. **Implement Logic:**
    - Develop the main logic, breaking down the problem into manageable steps.
@@ -295,16 +303,19 @@ Typecasting, much like shaping raw materials into a specific form, involves conv
 In the vast landscape of JavaScript, converting a string to a number is akin to forging a numeric foundation. Let's explore the methods at our disposal:
 
 1. **Using `parseInt`:**
-    ```javascript
+
+   ```javascript
    var num = parseInt("1234");
    ```
 
 2. **Using `parseFloat`:**
-    ```javascript
-    var num = parseFloat("1234.5");
-    ```
+
+   ```javascript
+   var num = parseFloat("1234.5");
+   ```
 
 3. **Using `Number`:**
+
    ```javascript
    var num = Number("1234.5");
    ```
@@ -327,33 +338,35 @@ let num2 = parseInt("12js4.5"); // 12
 
 In the construction of JavaScript arrays, transforming strings into numbers is akin to crafting numeric arrays. The `.map(Number)` technique is our artisanal tool for this endeavor:
 
-   ```javascript
-   var arr = ["10", "20", "30"];
-   var numArr = arr.map(Number)
-   console.log(numArr); // [10, 20, 30]
-   ```
+```javascript
+var arr = ["10", "20", "30"];
+var numArr = arr.map(Number);
+console.log(numArr); // [10, 20, 30]
+```
 
-   **Explanation:**
-   1. The `map` function is our artisanal method, iterating over each element of the array.
-   2. The `Number` function acts as our crafting tool, transforming strings into numeric elements during the mapping process.
-   3. The resulting array, `numberArray`, emerges as a finely crafted array of numbers.
+**Explanation:**
 
-   ```
-   +--------------------+                +-------------------+
-   |   Array of         |                |   Array of        |
-   |   Strings          |  .map(Number)  |   Numbers         |
-   | ["10", "20", "30"] |  ------------> | [10, 20, 30]      |
-   |                    |                |                   |
-   +--------------------+                +-------------------+
-   ```
+1.  The `map` function is our artisanal method, iterating over each element of the array.
+2.  The `Number` function acts as our crafting tool, transforming strings into numeric elements during the mapping process.
+3.  The resulting array, `numberArray`, emerges as a finely crafted array of numbers.
 
-   :book: **Details:** For an in-depth understanding of the Map function, refer to the detailed guide [MRF.md](MRF.md).
+```
++--------------------+                +-------------------+
+|   Array of         |                |   Array of        |
+|   Strings          |  .map(Number)  |   Numbers         |
+| ["10", "20", "30"] |  ------------> | [10, 20, 30]      |
+|                    |                |                   |
++--------------------+                +-------------------+
+```
+
+:book: **Details:** For an in-depth understanding of the Map function, refer to the detailed guide [MRF.md](MRF.md).
 
 ## 4.3. Number to String: Molding Textual Structures 🖌️
 
 In the artistry of programming, molding numerical entities into strings is comparable to shaping textual structures. Let's explore the methods of this transformation:
 
 1. **Using `toString`:**
+
    ```javascript
    var num = 1234;
    var str = num.toString();
@@ -361,6 +374,7 @@ In the artistry of programming, molding numerical entities into strings is compa
    ```
 
 2. **Using `String`:**
+
    ```javascript
    var num = 1234;
    var str = String(num);
@@ -370,7 +384,7 @@ In the artistry of programming, molding numerical entities into strings is compa
 3. **Using `+` Operator:**
    ```javascript
    var num = 1234;
-   var str = ""+num;
+   var str = "" + num;
    console.log(str); // "1234"
    ```
 
@@ -442,41 +456,41 @@ Relational operators facilitate blueprint comparisons, generating either `true` 
 ### Less Than (`<`): Defining Hierarchies
 
 ```javascript
-console.log(10 < 20) // true
-console.log(10 < 10) // false
-console.log(10 < 0) // false
+console.log(10 < 20); // true
+console.log(10 < 10); // false
+console.log(10 < 0); // false
 ```
 
 ### Greater Than (`>`): Ascending Heights
 
 ```javascript
-console.log(10 > 20) // false
-console.log(10 > 10) // false
-console.log(10 > 0) // true
+console.log(10 > 20); // false
+console.log(10 > 10); // false
+console.log(10 > 0); // true
 ```
 
 ### Less Than or Equal To (`<=`): Navigating Boundaries
 
 ```javascript
-console.log(10 <= 20) // true
-console.log(10 <= 10) // true
-console.log(10 <= 0) // false
+console.log(10 <= 20); // true
+console.log(10 <= 10); // true
+console.log(10 <= 0); // false
 ```
 
 ### Greater Than or Equal To (`>=`): Establishing Inclusivity
 
 ```javascript
-console.log(10 >= 20) // false
-console.log(10 >= 10) // true
-console.log(10 >= 0) // true
+console.log(10 >= 20); // false
+console.log(10 >= 10); // true
+console.log(10 >= 0); // true
 ```
 
 ### Equal To (`==`): Evaluating Equal Foundations
 
 ```javascript
-console.log(10 == 20) // false
-console.log(10 == 10) // true
-console.log(10 == 0) // false
+console.log(10 == 20); // false
+console.log(10 == 10); // true
+console.log(10 == 0); // false
 ```
 
 **Note:** The equality operator assesses values, disregarding type differences.
@@ -484,17 +498,17 @@ console.log(10 == 0) // false
 ### Not Equal To (`!=`): Diverging Paths
 
 ```javascript
-console.log(10 != 20) // true
-console.log(10 != 10) // false
-console.log(10 != 0) // true
+console.log(10 != 20); // true
+console.log(10 != 10); // false
+console.log(10 != 0); // true
 ```
 
 ### Strict Equal To (`===`): Enforcing Type and Value Equality
 
 ```javascript
-console.log(10 === 20) // false
-console.log(10 === 10) // true
-console.log(10 === 0) // false
+console.log(10 === 20); // false
+console.log(10 === 10); // true
+console.log(10 === 0); // false
 ```
 
 **Note:** The strict equality operator checks both type and value.
@@ -502,9 +516,9 @@ console.log(10 === 0) // false
 ### Strict Not Equal To (`!==`): Upholding Distinctiveness
 
 ```javascript
-console.log(10 !== 20) // true
-console.log(10 !== 10) // false
-console.log(10 !== 0) // true
+console.log(10 !== 20); // true
+console.log(10 !== 10); // false
+console.log(10 !== 0); // true
 ```
 
 ## 5.3. Logical Operators: Navigating Expressive Pathways 🛤️
@@ -514,7 +528,7 @@ Logical operators pave the way for expressive pathways, combining results into `
 ### Logical AND (`&&`): Coordinating Truths
 
 ```javascript
-console.log(true && false) // false
+console.log(true && false); // false
 ```
 
 **Note:** Returns the first `false` expression; if all are `true`, returns the last expression.
@@ -522,7 +536,7 @@ console.log(true && false) // false
 ### Logical OR (`||`): Uniting Possibilities
 
 ```javascript
-console.log(true || false) // true
+console.log(true || false); // true
 ```
 
 **Note:** Returns the first `true` expression; if all are `false`, returns the last expression.
@@ -530,7 +544,7 @@ console.log(true || false) // true
 ### Logical NOT (`!`): Inverting Perspectives
 
 ```javascript
-console.log(!true) // false
+console.log(!true); // false
 ```
 
 Logical NOT inverts the result of the expression.
@@ -590,7 +604,7 @@ The conditional operator guides you through decision crossroads, paving the way 
 ```javascript
 var num = 10;
 var num2 = 20;
-var result = (num > num2)? "num is greater than num2" : "num is less than num2";
+var result = num > num2 ? "num is greater than num2" : "num is less than num2";
 console.log(result); // num is greater than num2
 ```
 
@@ -603,26 +617,26 @@ Bitwise operators intricately weave binary narratives, unveiling the hidden stor
 ### Bitwise AND (`&`): Harmonizing Binary Threads
 
 ```javascript
-var num1 = 10;              // 1010
-var num2 = 15;              // 1111
-var result = num1 & num2;   //----- &
+var num1 = 10; // 1010
+var num2 = 15; // 1111
+var result = num1 & num2; //----- &
 console.log(result); // 10  // 1010
 ```
 
 ### Bitwise OR (`|`): Uniting Binary Realms
 
 ```javascript
-var num1 = 10;              // 1010
-var num2 = 15;              // 1111
-var result = num1 | num2;   //----- |
+var num1 = 10; // 1010
+var num2 = 15; // 1111
+var result = num1 | num2; //----- |
 console.log(result); // 15  // 1111
 ```
 
 ### Bitwise NOT (`~`): Inverting Binary Perspectives
 
 ```javascript
-var num1 = 10;               // 00001010
-var result = ~num1;          //--------- ~
+var num1 = 10; // 00001010
+var result = ~num1; //--------- ~
 console.log(result); // -11  // 11110101
 ```
 
@@ -631,16 +645,16 @@ console.log(result); // -11  // 11110101
 ### Bitwise XOR (`^`): Pulsating Binary Rhythms
 
 ```javascript
-var num1 = 10;              // 00001010
-var num2 = 15;              // 00001111
-var result = num1 ^ num2;   //--------- ^
+var num1 = 10; // 00001010
+var num2 = 15; // 00001111
+var result = num1 ^ num2; //--------- ^
 console.log(result); // 15  // 00000101
 ```
 
 ### Left Shift (`<<`): Shaping Binary Horizons
 
 ```javascript
-var num1 = 10;              // 00001010
+var num1 = 10; // 00001010
 var num2 = 2;
 var result = num1 << num2;
 console.log(result); // 40  // 00101000
@@ -651,7 +665,7 @@ console.log(result); // 40  // 00101000
 ### Right Shift (`>>`): Navigating Binary Constricts
 
 ```javascript
-var num1 = 10;              // 00001010
+var num1 = 10; // 00001010
 var num2 = 2;
 var result = num1 >> num2;
 console.log(result); // 2  // 00000010
@@ -894,7 +908,7 @@ The `while` loop is like laying bricks, building your code upward. It repeats a 
 
 ```javascript
 while (condition) {
-   // Build the block
+  // Build the block
 }
 ```
 
@@ -904,8 +918,8 @@ while (condition) {
 let count = 0;
 
 while (count < 5) {
-   console.log("Count:", count);
-   count++;
+  console.log("Count:", count);
+  count++;
 }
 
 console.log("Construction Complete");
@@ -950,7 +964,7 @@ The `for` loop is your blueprint, defining the structure with precise iterations
 
 ```javascript
 for (initialization; condition; alteration) {
-   // Construct the block
+  // Construct the block
 }
 ```
 
@@ -958,7 +972,7 @@ for (initialization; condition; alteration) {
 
 ```javascript
 for (var i = 1; i <= 5; i++) {
-   console.log(i); // 1, 2, 3, 4, 5
+  console.log(i); // 1, 2, 3, 4, 5
 }
 
 console.log("Construction Completed");
@@ -1002,7 +1016,7 @@ The `do...while` loop is the resilient construction worker, ensuring the buildin
 
 ```javascript
 do {
-   // Build the block
+  // Build the block
 } while (condition);
 ```
 
@@ -1012,8 +1026,8 @@ do {
 let count = 0;
 
 do {
-   console.log("Count: " + count);
-   count++;
+  console.log("Count: " + count);
+  count++;
 } while (count < 5);
 
 console.log("Construction Concluded");
@@ -1072,7 +1086,7 @@ switch (expression) {
     // Execute code for value2
     break;
   default:
-    // Execute code when no cases match
+  // Execute code when no cases match
 }
 ```
 
@@ -1212,20 +1226,20 @@ for (variable in object) {
 
 ```javascript
 let person = {
-  name: "Pugazharasan C",
+  name: "Afzal Imdad",
   age: 25,
-  city: "Chennai"
+  city: "Chennai",
 };
 
 for (var property in person) {
-  console.log(property, '=>', person[property]); // Outputs name => Pugazharasan C, age => 25, city => Chennai
+  console.log(property, "=>", person[property]); // Outputs name => Afzal Imdad, age => 25, city => Chennai
 }
 ```
 
 ### Output: Navigating the Person
 
 ```vbnet
-name => Pugazharasan C
+name => Afzal Imdad
 age => 25
 city => Chennai
 ```
@@ -1265,10 +1279,10 @@ With these branching and looping constructs, your code becomes a well-navigated 
 
 ---
 
-*Thank you for taking the time to read my article. Your engagement is the driving force behind the words on these pages. Whether you found information, inspiration, or simply enjoyed the content, your presence is deeply appreciated. Writing is a shared journey, and I'm grateful to have you as a reader. Cheers to the joy of exploration and discovery! 🌟*
+_Thank you for taking the time to read my article. Your engagement is the driving force behind the words on these pages. Whether you found information, inspiration, or simply enjoyed the content, your presence is deeply appreciated. Writing is a shared journey, and I'm grateful to have you as a reader. Cheers to the joy of exploration and discovery! 🌟_
 
-*If you enjoyed the article, consider giving it more stars!*
+_If you enjoyed the article, consider giving it more stars!_
 
-*With gratitude,*
+_With gratitude,_
 
-*Pugazharasan C*
+_Afzal Imdad_

@@ -22,7 +22,6 @@ Ever wanted to craft objects with specific properties and behaviors? Constructor
 
 Now, let's embark on this magical journey and unravel the secrets of OOP in JavaScript! 🌌✨
 
-
 # 🌈 Chapter 1: What is Object-Oriented Programming (OOP)?
 
 Greetings, magical apprentices! 🧙‍♀️✨
@@ -36,23 +35,28 @@ At its core, OOP revolves around the concept of **objects**. An object is like a
 ## :sparkles: Key Components
 
 ### 1. **Objects**
-   - Objects are the building blocks of OOP. They encapsulate data (attributes) and actions (methods), making them powerful entities in the code kingdom.
+
+- Objects are the building blocks of OOP. They encapsulate data (attributes) and actions (methods), making them powerful entities in the code kingdom.
 
 ### 2. **Classes**
-   - Think of classes as blueprints or molds for creating objects. They define the structure and behavior that objects belonging to them will exhibit.
+
+- Think of classes as blueprints or molds for creating objects. They define the structure and behavior that objects belonging to them will exhibit.
 
 ### 3. **`this` Keyword**
-   - Brace yourselves for the magic of the 'this' keyword! It's your trusty wand, allowing objects to refer to themselves and access their own properties and methods.
+
+- Brace yourselves for the magic of the 'this' keyword! It's your trusty wand, allowing objects to refer to themselves and access their own properties and methods.
 
 ### 4. **Getter and Setter Methods**
-   - Unveil the secrets of accessing and modifying object properties with getter and setter methods. These enchanting methods provide controlled access to the magical attributes within an object.
+
+- Unveil the secrets of accessing and modifying object properties with getter and setter methods. These enchanting methods provide controlled access to the magical attributes within an object.
 
 ### 5. **Constructor**
-   - The constructor is like the magical birthplace of objects. It's a special method within a class that is invoked when a new object is created. Here, you can set up the initial state and enchantments of the object.
+
+- The constructor is like the magical birthplace of objects. It's a special method within a class that is invoked when a new object is created. Here, you can set up the initial state and enchantments of the object.
 
 ### 6. **Abstraction, Encapsulation, Inheritance, Polymorphism**
-   - While these magical concepts exist in the realm of OOP, our focus in this article will be on Objects and Classes. The intricacies of Abstraction, Encapsulation, Inheritance, and Polymorphism shall be explored in future enchanting chapters.
 
+- While these magical concepts exist in the realm of OOP, our focus in this article will be on Objects and Classes. The intricacies of Abstraction, Encapsulation, Inheritance, and Polymorphism shall be explored in future enchanting chapters.
 
 ## :crystal_ball: Why OOP Matters
 
@@ -79,13 +83,16 @@ In JavaScript, every object is linked to a prototype object. A prototype is like
 ## :sparkles: Key Concepts
 
 ### 1. **`prototype` Property**
-   - Each function in JavaScript has a special property called `prototype`. It's like a spellbook containing methods that objects created from the function will inherit.
+
+- Each function in JavaScript has a special property called `prototype`. It's like a spellbook containing methods that objects created from the function will inherit.
 
 ### 2. **`__proto__` Property**
-   - The `__proto__` property is a direct connection to an object's prototype. It's like a magical mirror reflecting the prototype from which an object inherits.
+
+- The `__proto__` property is a direct connection to an object's prototype. It's like a magical mirror reflecting the prototype from which an object inherits.
 
 ### 3. **Prototypal Inheritance**
-   - Prototypal inheritance is the magical process where an object inherits properties and methods from its prototype. It's the essence of the enchanting connection between objects and their prototypes.
+
+- Prototypal inheritance is the magical process where an object inherits properties and methods from its prototype. It's the essence of the enchanting connection between objects and their prototypes.
 
 ## :mage: Why Prototypes Matter
 
@@ -160,8 +167,8 @@ const malfoy = new DarkElf("Malfoy", "Slytherin", "Dark Arts");
 
 // Utilizing inherited methods
 legolas.castMagic(); // Output: Legolas casts a powerful spell!
-malfoy.castMagic();  // Output: Malfoy casts a powerful spell!
-malfoy.darkCast();   // Output: Malfoy unleashes dark power!
+malfoy.castMagic(); // Output: Malfoy casts a powerful spell!
+malfoy.darkCast(); // Output: Malfoy unleashes dark power!
 ```
 
 ## :crystal_ball: Custom Prototypes
@@ -187,8 +194,8 @@ const witch = Object.create(magicalBeingPrototype);
 witch.name = "Hermione";
 
 // Utilizing custom prototype methods
-wizard.teleport("Rivendell");   // Output: Gandalf teleports to Rivendell effortlessly.
-witch.invisibility();           // Output: Hermione fades into the shadows, becoming invisible.
+wizard.teleport("Rivendell"); // Output: Gandalf teleports to Rivendell effortlessly.
+witch.invisibility(); // Output: Hermione fades into the shadows, becoming invisible.
 ```
 
 ## :scroll: Closing the Tome of Prototypes
@@ -228,9 +235,10 @@ const sorcerer = new SpellCaster("Merlin", "Arcane Magic");
 const enchantress = new SpellCaster("Morgana", "Dark Sorcery");
 
 // Utilizing the magical powers of the class
-sorcerer.castSpell();     // Output: Merlin casts a mesmerizing spell!
-enchantress.castSpell();  // Output: Morgana casts a mesmerizing spell!
+sorcerer.castSpell(); // Output: Merlin casts a mesmerizing spell!
+enchantress.castSpell(); // Output: Morgana casts a mesmerizing spell!
 ```
+
 ## :construction_worker: Constructors at Work
 
 In the magical kingdom of JavaScript, constructors are the skilled artisans within the castle, crafting new objects and enchanting them with initial properties. Witness their craftsmanship in the magical realm.
@@ -247,8 +255,8 @@ const phoenix = new MagicalCreature("Fawkes", "Phoenix");
 const dragon = new MagicalCreature("Smaug", "Dragon");
 
 // Behold the enchanted creatures!
-console.log(phoenix);  // Output: { name: 'Fawkes', type: 'Phoenix' }
-console.log(dragon);   // Output: { name: 'Smaug', type: 'Dragon' }
+console.log(phoenix); // Output: { name: 'Fawkes', type: 'Phoenix' }
+console.log(dragon); // Output: { name: 'Smaug', type: 'Dragon' }
 ```
 
 ### :zap: Constructors in Action
@@ -285,7 +293,7 @@ In the mystical realm of JavaScript, open properties are like gardens accessible
 
 ```javascript
 class EnchantedBeing {
-  power;  // Property
+  power; // Property
 
   constructor(power) {
     this.power = power;
@@ -297,10 +305,9 @@ class EnchantedBeing {
 }
 
 const fairy = new EnchantedBeing("Nature Magic");
-fairy.revealPower();  // Output: The revealed power: Nature Magic
-console.log(fairy.power);  // Output: Nature Magic
+fairy.revealPower(); // Output: The revealed power: Nature Magic
+console.log(fairy.power); // Output: Nature Magic
 ```
-
 
 ### :closed_lock_with_key: Private Property
 
@@ -310,7 +317,7 @@ Amidst the enchanting gardens of open properties, there exist hidden treasures�
 // Only on NodeJS
 
 class EnchantedBeing {
-  #privatePower;  // Private property
+  #privatePower; // Private property
 
   constructor(power) {
     this.#privatePower = power;
@@ -322,8 +329,8 @@ class EnchantedBeing {
 }
 
 const sorcerer = new EnchantedBeing("Arcane Magic");
-sorcerer.revealPower();  // Output: The hidden power: Arcane Magic
-console.log(sorcerer.#privatePower);  // Error: Private field '#privatePower' must be declared in an enclosing class
+sorcerer.revealPower(); // Output: The hidden power: Arcane Magic
+console.log(sorcerer.#privatePower); // Error: Private field '#privatePower' must be declared in an enclosing class
 ```
 
 ### :closed_book: Wisdom from the Tome
@@ -344,12 +351,12 @@ Methods in JavaScript are functions that are associated with an object. They enc
 class EnchantedArtifact {
   // An enchanting method to cast a spell
   castSpell() {
-    console.log('Abracadabra! A spell is cast.');
+    console.log("Abracadabra! A spell is cast.");
   }
 
   // A magical method to reveal the enchanted properties
   revealProperties() {
-    console.log('Enchanted Properties:', this);
+    console.log("Enchanted Properties:", this);
   }
 }
 
@@ -383,11 +390,11 @@ Getters are magical methods that allow us to retrieve the value of a property wi
 
 ```javascript
 class EnchantedArtifact {
-  _innerTreasure = 'Secret Knowledge';
+  _innerTreasure = "Secret Knowledge";
 
   // A mystical guardian (getter) revealing the inner treasure
   get treasure() {
-    console.log('Accessing the inner treasure!');
+    console.log("Accessing the inner treasure!");
     return this._innerTreasure;
   }
 }
@@ -405,18 +412,17 @@ console.log(ancientScroll.treasure);
 
 Setters are enchanting spells that provide a controlled mechanism for setting the value of a property. They ensure that only worthy changes are made to the magical essence of an object.
 
-
 ```javascript
 class EnchantedArtifact {
-  _innerTreasure = 'Secret Knowledge';
+  _innerTreasure = "Secret Knowledge";
 
   // A bewitching spell (setter) to safeguard the inner treasure
   set treasure(newTreasure) {
-    if (newTreasure === 'New Wisdom') {
-      console.log('Changing the inner treasure!');
+    if (newTreasure === "New Wisdom") {
+      console.log("Changing the inner treasure!");
       this._innerTreasure = newTreasure;
     } else {
-      console.error('Invalid attempt to change the inner treasure!');
+      console.error("Invalid attempt to change the inner treasure!");
     }
   }
 }
@@ -425,12 +431,12 @@ class EnchantedArtifact {
 const ancientScroll = new EnchantedArtifact();
 
 // Attempting to change the inner treasure using the setter
-ancientScroll.treasure = 'Ancient Secrets';
+ancientScroll.treasure = "Ancient Secrets";
 // Output: Invalid attempt to change the inner treasure!
 console.log(ancientScroll.treasure);
 // Output: Secret Knowledge
 
-ancientScroll.treasure = 'New Wisdom';
+ancientScroll.treasure = "New Wisdom";
 // Output: Changing the inner treasure!
 console.log(ancientScroll.treasure);
 // Output: New Wisdom
@@ -444,7 +450,6 @@ console.log(ancientScroll.treasure);
 
 - **Guardians of Access:** Getters and setters together form the guardians of access, bringing harmony to the magical world of JavaScript.
 
-
 ## :thinking: The Quest for Setters and Getters: A Journey into Necessity
 
 In the vast realms of JavaScript, the need for setters and getters arises from the desire to create objects with controlled access to their inner properties. This quest leads us to explore the essential reasons behind embracing these enchanting constructs.
@@ -455,23 +460,23 @@ In the vast realms of JavaScript, the need for setters and getters arises from t
 
 ```javascript
 class MagicalArtifact {
-    #innerSecret = 'Hidden Wisdom';
+  #innerSecret = "Hidden Wisdom";
 
-    get secret() {
+  get secret() {
     return this.#innerSecret;
-    }
+  }
 
-    set secret(newSecret) {
-    if (newSecret === 'New Wisdom') {
-        this.#innerSecret = newSecret;
+  set secret(newSecret) {
+    if (newSecret === "New Wisdom") {
+      this.#innerSecret = newSecret;
     } else {
-        console.error('Invalid attempt to change the inner secret!');
+      console.error("Invalid attempt to change the inner secret!");
     }
-    }
+  }
 }
 
 const ancientScroll = new MagicalArtifact();
-console.log(ancientScroll.secret);  // Output: Hidden Wisdom
+console.log(ancientScroll.secret); // Output: Hidden Wisdom
 ```
 
 2. **Validation and Constraints:** Setters empower developers to impose validation checks and constraints when assigning values to properties. This ensures that only valid and acceptable values become part of an object's essence.
@@ -488,14 +493,14 @@ class Wizard {
     if (newLevel >= 0 && newLevel <= 100) {
       this.#magicLevel = newLevel;
     } else {
-      console.error('Invalid magic level!');
+      console.error("Invalid magic level!");
     }
   }
 }
 
 const merlin = new Wizard();
 merlin.magicLevel = 75;
-console.log(merlin.magicLevel);  // Output: 75
+console.log(merlin.magicLevel); // Output: 75
 ```
 
 ### :shield: Safeguarding the Magical Essence
@@ -517,23 +522,23 @@ In the grand arena of JavaScript, two formidable contenders—methods and getter
 1. **Versatility and Power:** Methods wield a broad spectrum of capabilities, ranging from executing complex logic to performing a series of actions. They are the swiss army knives of functionality, adaptable to diverse scenarios.
 
 ```javascript
-   class SpellCaster {
-     #spellPower = 0;
+class SpellCaster {
+  #spellPower = 0;
 
-     castSpell() {
-       // Perform spellcasting logic
-       this.#spellPower += 10;
-       console.log('Spell cast!');
-     }
+  castSpell() {
+    // Perform spellcasting logic
+    this.#spellPower += 10;
+    console.log("Spell cast!");
+  }
 
-     getSpellPower() {
-       return this.#spellPower;
-     }
-   }
+  getSpellPower() {
+    return this.#spellPower;
+  }
+}
 
-   const sorcerer = new SpellCaster();
-   sorcerer.castSpell();
-   console.log(sorcerer.getSpellPower());  // Output: 10
+const sorcerer = new SpellCaster();
+sorcerer.castSpell();
+console.log(sorcerer.getSpellPower()); // Output: 10
 ```
 
 2. **Action-Packed:** Methods thrive in an action-packed environment. They execute a sequence of steps, making them ideal for scenarios where multiple actions need to be orchestrated.
@@ -554,14 +559,14 @@ class EnchantedArmor {
     if (newRating >= 0) {
       this.#defenseRating = newRating;
     } else {
-      console.error('Invalid defense rating!');
+      console.error("Invalid defense rating!");
     }
   }
 }
 
 const mysticalArmor = new EnchantedArmor();
 mysticalArmor.defenseRating = 20;
-console.log(mysticalArmor.defenseRating);  // Output: 20
+console.log(mysticalArmor.defenseRating); // Output: 20
 ```
 
 4. **Property Guardians:** Getters and setters act as diligent guardians, ensuring that external forces abide by the rules when interacting with an object's properties.
@@ -596,10 +601,10 @@ May your code be elegant, your bugs few, and your algorithms swift. Until we mee
 
 ---
 
-*Thank you for taking the time to read my article. Your engagement is the driving force behind the words on these pages. Whether you found information, inspiration, or simply enjoyed the content, your presence is deeply appreciated. Writing is a shared journey, and I'm grateful to have you as a reader. Cheers to the joy of exploration and discovery! 🌟*
+_Thank you for taking the time to read my article. Your engagement is the driving force behind the words on these pages. Whether you found information, inspiration, or simply enjoyed the content, your presence is deeply appreciated. Writing is a shared journey, and I'm grateful to have you as a reader. Cheers to the joy of exploration and discovery! 🌟_
 
-*If you enjoyed the article, consider giving it more stars!*
+_If you enjoyed the article, consider giving it more stars!_
 
-*With gratitude,*
+_With gratitude,_
 
-*Pugazharasan C*
+_Afzal Imdad_
